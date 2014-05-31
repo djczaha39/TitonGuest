@@ -10,3 +10,7 @@ commands:
         description: Shows TitonGuest help.
         usage: /<command>
         permissions-message: You don't have permission to use this command.
+    ttp:
+        description: TitonTeleport
+        usage: /<command>
+        permissions-message: You don't have permission to use this command.
