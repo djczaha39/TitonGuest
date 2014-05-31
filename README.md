@@ -35,6 +35,6 @@ Also try and include information like version of TitonGuest and Bukkit.
 Additional Information like what Java version the server runs on would be appreciated, but is not required at all times.
 
 [TitonWiki]: http://wiki.titongames.com/
-[JenkinsJob]: http://titongames.com:8080/job/TitonGuest/
+[JenkinsJob]: http://ci.titongames.com/job/TitonGuest/
 [Bukkit]: http://bukkit.org/
 [Maven]: http://maven.apache.org/
