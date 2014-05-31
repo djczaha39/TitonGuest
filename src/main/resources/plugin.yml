@@ -1,0 +1,12 @@
+name: ${project.artifactId}
+main: com.titongames.titonguest.Main
+authors: [SkuLL]
+version: ${project.version}
+website: ${project.url}
+description: ${project.description}
+
+commands:
+    titonguest:
+        description: Shows TitonGuest help.
+        usage: /<command>
+        permissions-message: You don't have permission to use this command.
