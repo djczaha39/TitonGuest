@@ -8,12 +8,13 @@ import org.bukkit.event.player.PlayerLoginEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 
 public class ListenerPlayerConnection implements Listener {
+    /**
     @EventHandler(priority= EventPriority.MONITOR)
     public void onPlayerJoin(PlayerLoginEvent event)
     {
         String player = event.getPlayer().getDisplayName();
         event.setJoinMessage(ChatColor.DARK_GRAY + "+ " + " Player " + player + " " + "has joined the game!");
-    }
+    }**/
 
     @EventHandler(priority=EventPriority.MONITOR)
     public void onPlayerQuit(PlayerQuitEvent event)
