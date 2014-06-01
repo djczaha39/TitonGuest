@@ -1,6 +1,7 @@
 package com.titongames.titonguest;
 
 import com.titongames.titonguest.commands.commandTP;
+import com.titongames.titonguest.commands.commandWHO;
 import com.titongames.titonguest.listeners.ListenerPlayerConnection;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -22,6 +23,7 @@ public class Main extends JavaPlugin{
         getLogger().info("[Starting] " + PLUGIN_NAME);
         registerEvents(this, new ListenerPlayerConnection());
         getCommand("ttp").setExecutor(new commandTP());
+        getCommand("who").setExecutor(new commandWHO());
     }
 
     @Override

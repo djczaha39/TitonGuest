@@ -11,6 +11,10 @@ commands:
         usage: /<command>
         permissions-message: You don't have permission to use this command.
     ttp:
-        description: TitonTeleport
+        description: TitonTeleport.
         usage: /<command>
         permissions-message: You don't have permission to use this command.
+    who:
+            description: Shows the player list.
+            usage: /<command>
+            permissions-message: You don't have permission to use this command.
