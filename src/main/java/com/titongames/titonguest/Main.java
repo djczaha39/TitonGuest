@@ -23,7 +23,9 @@ public class Main extends JavaPlugin{
         getLogger().info("Starting " + PLUGIN_NAME);
         registerEvents(this, new ListenerPlayerConnection());
         getCommand("ttp").setExecutor(new commandTP());
-        getCommand("who").setExecutor(new commandWHO());
+        getCommand("list").setExecutor(new commandWHO(this));
+        getCommand("who").setExecutor(new commandWHO(this));
+        getCommand("players").setExecutor(new commandWHO(this));
     }
 
     @Override

@@ -6,7 +6,7 @@
 
     <groupId>com.titongames</groupId>
     <artifactId>TitonGuest</artifactId>
-    <version>1.0.4-SNAPSHOT</version>
+    <version>1.0.5-SNAPSHOT</version>
     <url>http://titongames.com</url>
     <description>Main user managment plugin for TitonMC.</description>
 
