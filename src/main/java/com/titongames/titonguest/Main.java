@@ -48,10 +48,10 @@ public class Main extends JavaPlugin{
             if(sender instanceof Player) {
                 if(args.length == 0) {
                     //Display Help For TitonGuest
-                    sender.sendMessage(ChatColor.RED + " ===== TitonGuest ===== ");
+                    sender.sendMessage(ChatColor.RED + " ====== TitonGuest ====== ");
                     sender.sendMessage(ChatColor.AQUA + "/ttp - Titongames teleport.");
                     sender.sendMessage(ChatColor.AQUA + "/who - Show online players");
-                    sender.sendMessage(ChatColor.AQUA + "/who - Show online players");
+                    sender.sendMessage(ChatColor.AQUA + "/cmd - cmd");
                     sender.sendMessage(ChatColor.RED + " ====================== ");
                 }
             }
