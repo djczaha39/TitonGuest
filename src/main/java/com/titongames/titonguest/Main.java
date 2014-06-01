@@ -20,7 +20,7 @@ public class Main extends JavaPlugin{
 
     @Override
     public void onEnable(){
-        getLogger().info("[Starting] " + PLUGIN_NAME);
+        getLogger().info("Starting " + PLUGIN_NAME);
         registerEvents(this, new ListenerPlayerConnection());
         getCommand("ttp").setExecutor(new commandTP());
         getCommand("who").setExecutor(new commandWHO());
@@ -28,7 +28,7 @@ public class Main extends JavaPlugin{
 
     @Override
     public void onDisable(){
-        getLogger().info("[Disabling] " + PLUGIN_NAME);
+        getLogger().info("Disabling " + PLUGIN_NAME);
     }
 
     public static void registerEvents(org.bukkit.plugin.Plugin plugin, Listener... listeners) {
