@@ -16,9 +16,7 @@ public class commandWHO implements CommandExecutor {
         if(cmd.getName().equalsIgnoreCase("who")) {
             if(sender instanceof Player) {
                 Player[] pl = plugin.getServer().getOnlinePlayers();
-                StringBuilder sb = new StringBuilder();
-                if (sb.length() < 2) return false;
-                sender.sendMessage(ChatColor.AQUA + "Online Players: " + ChatColor.RESET + sb.toString().substring(0, sb.length() - 2));
+                sender.sendMessage(ChatColor.AQUA + "Online Players: " + ChatColor.RESET + pl);
             } else {
                 sender.sendMessage("This is a Player only command.");
             }
