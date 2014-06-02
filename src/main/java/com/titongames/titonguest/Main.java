@@ -57,9 +57,9 @@ public class Main extends JavaPlugin{
                 if(args.length == 0) {
                     //Display Help For TitonGuest
                     sender.sendMessage(ChatColor.RED + " ====== TitonGuest ====== ");
-                    sender.sendMessage(ChatColor.AQUA + "/ttp - Titongames teleport.");
-                    sender.sendMessage(ChatColor.AQUA + "/who - Show online players.");
-                    sender.sendMessage(ChatColor.AQUA + "/god - Give you god-mode.");
+                    sender.sendMessage(ChatColor.AQUA + "/ttp - Titongames teleport");
+                    sender.sendMessage(ChatColor.AQUA + "/who - Show online players");
+                    sender.sendMessage(ChatColor.AQUA + "/god - Give you god-mode");
                     sender.sendMessage(ChatColor.RED + " ====================== ");
                 }
             }
