@@ -1,8 +1,10 @@
 package com.titongames.titonguest;
 
+import com.titongames.titonguest.commands.commandGOD;
 import com.titongames.titonguest.commands.commandTP;
 import com.titongames.titonguest.commands.commandWHO;
 import com.titongames.titonguest.listeners.ListenerPlayerConnection;
+import com.titongames.titonguest.listeners.ListenerPlayerState;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -22,10 +24,12 @@ public class Main extends JavaPlugin{
     public void onEnable(){
         getLogger().info("Starting " + PLUGIN_NAME);
         registerEvents(this, new ListenerPlayerConnection());
+        registerEvents(this, new ListenerPlayerState());
         getCommand("ttp").setExecutor(new commandTP());
         getCommand("list").setExecutor(new commandWHO(this));
         getCommand("who").setExecutor(new commandWHO(this));
         getCommand("players").setExecutor(new commandWHO(this));
+        getCommand("god").setExecutor(new commandGOD(this));
     }
 
     @Override
@@ -54,8 +58,8 @@ public class Main extends JavaPlugin{
                     //Display Help For TitonGuest
                     sender.sendMessage(ChatColor.RED + " ====== TitonGuest ====== ");
                     sender.sendMessage(ChatColor.AQUA + "/ttp - Titongames teleport.");
-                    sender.sendMessage(ChatColor.AQUA + "/who - Show online players");
-                    sender.sendMessage(ChatColor.AQUA + "/cmd - cmd");
+                    sender.sendMessage(ChatColor.AQUA + "/who - Show online players.");
+                    sender.sendMessage(ChatColor.AQUA + "/god - Give you god-mode.");
                     sender.sendMessage(ChatColor.RED + " ====================== ");
                 }
             }

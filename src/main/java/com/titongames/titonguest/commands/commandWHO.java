@@ -47,7 +47,7 @@ public class commandWHO implements CommandExecutor {
             sender.sendMessage(ChatColor.YELLOW + "No players online.");
             return true;
         }
-        sender.sendMessage(ChatColor.YELLOW + "Online Players (" + playerCount + "): " + ChatColor.WHITE + list.substring(0, list.length() - 2));
+        sender.sendMessage(ChatColor.DARK_GRAY + "Online Players (" + playerCount + "): " + ChatColor.WHITE + list.substring(0, list.length() - 2));
         return true;
     }
 
