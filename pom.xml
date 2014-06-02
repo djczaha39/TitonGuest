@@ -16,7 +16,7 @@
             <url>http://repo.bukkit.org/content/groups/public</url>
         </repository>
     </repositories>
-
+w
     <dependencies>
         <dependency>
             <groupId>org.bukkit</groupId>
