@@ -39,7 +39,7 @@ public class Main extends JavaPlugin{
             getLogger().info("Done!");
         }
         if(!homelist.exists()) {
-            getLogger().info("Missin Warplist, creating the file...");
+            getLogger().info("Missing Warplist, creating the file...");
             try {
                 homelist.createNewFile();
                 getLogger().info("Done!");
@@ -60,7 +60,7 @@ public class Main extends JavaPlugin{
         getCommand("list").setExecutor(new commandWHO(this));
         getCommand("who").setExecutor(new commandWHO(this));
         getCommand("players").setExecutor(new commandWHO(this));
-        getCommand("god").setExecutor(new commandGOD(this));
+        // getCommand("god").setExecutor(new commandGOD(this));
         getCommand("warp").setExecutor(new commandWARP(this));
         getCommand("warplist").setExecutor(new commandWARPLIST(this));
         getCommand("setwarp").setExecutor(new commandSETWARP(this));
