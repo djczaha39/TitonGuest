@@ -78,13 +78,6 @@ public class Main extends JavaPlugin{
         }
     }
 
-
-    public static Plugin getPlugin() {
-        return plugin;
-    }
-
-
-
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if(cmd.getName().equalsIgnoreCase("titonguest")) {

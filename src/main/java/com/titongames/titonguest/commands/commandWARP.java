@@ -47,13 +47,6 @@ public class commandWARP implements CommandExecutor {
 
     private void warpPlayer(Player player, Location loc) {
         Block block = loc.getBlock();
-        while(block.getRelative(0, 1, 0).getTypeId() != 0 && block.getY() < 256) {
-            if(block.getRelative(0, 1, 0).getTypeId() != 0) {
-                block = block.getRelative(0, 3, 0);
-            } else {
-                block = block.getRelative(0, 2, 0);
-            }
-        }
         player.teleport(new Location(block.getWorld(), block.getX(), block.getX(), block.getZ(), loc.getYaw(), loc.getPitch()));
     }
 
